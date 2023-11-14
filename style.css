@@ -1,0 +1,244 @@
+*{margin: 0; padding: 0;box-sizing: border-box;}
+a{text-decoration: none;}
+.container1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.top{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background: rgb(125, 124, 124);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+}
+.logo_area{
+    width: 15%;
+}
+.logo_area a{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo_area a img{
+    width: 95px;
+}
+.logo_area a img:hover{
+    color: rgb(0,0,0,0.5);
+}
+.logo_area a h1{
+   
+    color: #fff;
+    text-transform: uppercase;
+    font-family: cursive;
+
+}
+.logo_area a h1:hover{
+color: black;
+}
+.menu_area{
+    width: 70%;
+
+}
+.menu_area ul{
+ list-style: none;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.menu_area ul li{
+position: relative;
+}
+
+
+    /*
+    .menu_area ul li h1::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    bottom: 0%;
+    left: 0%;
+    transition: 0.5s ease-in-out;
+    }
+    .menu_area ul li h1:hover::after{
+        width: 100%;
+    }
+    }*/
+.menu_area ul li::after{
+content: '';
+position: absolute;
+width: 0%;
+height: 3px;
+background: black;
+bottom: 0%;
+left: 0%;
+transition: 0.5s ease-in-out;
+}
+.menu_area ul li #login2{
+
+}
+.menu_area ul li:hover::after{
+    width: 100%;
+}
+.menu_area ul li a{
+    color: #fff;
+    font-family: lato;
+    font-size: 30px;
+}
+.menu_area ul li a:hover{
+    color: black;
+}
+
+.menu_area ul li a h3{
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+    background: rgb(25, 23, 23);
+    color: #fff;
+}
+.menu_area ul li h3::after{
+    width: 0%;
+}
+.menu_area ul li a h3:hover{
+    color:  rgb(25, 23, 23);
+    background: #fff;
+}
+
+.info{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.info h1{
+    color: #fff;
+    font-family: lato;
+    font-size: 60px;
+    padding-right: 80px;
+}
+.info p{
+    color: #fff;
+    font-size: 20px 40px;
+    font-family: Arial;
+    margin: 0px 0px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-right: 80px;
+}
+.btn button{
+padding: 20px 40px;
+background: transparent;
+border: 5px solid  black;
+color: #fff;
+font-size: 25px;
+margin-right: 80px;
+border-radius: 10px;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+}
+.btn button::after{
+    content: '';
+    position: absolute;
+    width:0%;
+    height: 100%;
+    background:rgb(25, 23, 23);
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+    transition: 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+.btn button:hover:after{
+    width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.container{
+    background:white;
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+
+.container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    background:rgb(77, 74, 80) ;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.container .box-container .box img{
+    height: 80px;
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
